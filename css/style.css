@@ -7,51 +7,26 @@
 
 /* Body y fondo */
 body, html {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
   height: 100%;
-  background-color: #1101015e  !important; /* Fondo claro para mantener la estética */
+  background-color: #1101015e !important; /* Fondo claro para mantener la estética */
   overflow-x: hidden; /* Evita el desplazamiento horizontal */
   position: relative; /* Para permitir que los cogollos se posicionen correctamente */
 }
 
+
+
+body, p, li {
+
+  font-family: 'Cinzel', serif;
+}
+
 /* Menú superior con color verde y fondo transparente */
-#menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro transparente */
-  padding: 15px 0;
-  z-index: 10;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
-#menu ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-}
-
-#menu ul li {
-  margin: 0 20px;
+  h1, h2, .navbar-brand {
+    font-family: 'Great Vibes', cursive;
+  }
  
-}
-
-#menu ul li a {
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  padding: 10px 20px;
-  border-radius: 30px;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-#menu ul li a:hover {
-  background-color: #45a049; /* Un verde más oscuro al pasar el ratón */
-  transform: scale(1.1); /* Efecto de agrandar el texto */
-}
 
 /* Contenedor de productos centrado */
 #product-container {
@@ -65,36 +40,53 @@ body, html {
 }
 
 .menu-section {
-  margin: 20px 0;
+  margin: 20px auto; /* Centra las secciones */
   padding-bottom: 20px;
   color: white;
   width: 80%;
+  text-align: center; /* Asegura que el texto esté centrado */
+  scroll-margin-top: 120px; /* Ajusta el desplazamiento del navbar */
+  padding: 15px 0; /* Aumenta el espaciado para secciones */
+  
 }
 
+/* Títulos de las secciones */
 .menu-section h2 {
-  font-size: 28px;
+  font-family: 'Caveat', cursive;
+  font-size: 1.8em; /* Tamaño de fuente ajustado */
   color: #37f807; /* Verde en los títulos */
   margin-bottom: 15px;
+  display: flex;
+  align-items: center; /* Alinea el ícono y texto */
+  justify-content: center; /* Centra el ícono y texto */
 }
 
+/* Iconos */
+.menu-section h2 i {
+  font-size: 1.5em; /* Ajusta el tamaño del ícono */
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+/* Asegurarse de que las listas no se desborden */
 .menu-section ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu-section ul li {
-    color: black;
   font-size: 20px;
   padding: 10px 0;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px solid #ddd;
+  color: black;
 }
 
+/* Último item sin borde inferior */
 .menu-section ul li:last-child {
   border-bottom: none;
 }
 
-/* Fondo con cogollos moviéndose por la pantalla */
-
-
+/* Fondo con cogollos en movimiento */
 #background {
   position: fixed;
   top: 0;
@@ -113,7 +105,6 @@ body, html {
   transition: transform 1s linear;
 }
 
-
 /* Diseño responsivo para dispositivos móviles */
 @media (max-width: 768px) {
   #menu ul {
@@ -129,14 +120,61 @@ body, html {
   }
 
   .menu-section h2 {
-    font-size: 24px;
+    font-size: 1.5em; /* Reducir tamaño de los títulos en pantallas pequeñas */
   }
 
   .menu-section ul li {
-    font-size: 18px;
+    font-size: 18px; /* Reducir tamaño de los ítems de la lista */
   }
 }
 
-.menu-section p{
-    color: black;
+.menu-section p {
+  color: black;
+}
+
+/* Estilo para la sección de contacto */
+#contacto {
+  text-align: center;
+  color: white;
+}
+
+/* Títulos con iconos */
+#contacto h2 {
+  font-size: 1.8em; /* Tamaño del texto */
+  color: #37f807; /* Verde para el título */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contacto h2 i {
+  font-size: 1.5em; /* Tamaño de los íconos */
+  margin-right: 10px; /* Espacio entre los iconos y el texto */
+}
+
+/* Estilo de los iconos sociales */
+.social-icon {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin: 0 15px; /* Espacio entre los iconos */
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #37f807; /* Verde cuando se pasa el ratón */
+}
+
+.social-icon i {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+#contacto p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Estilo para los iconos de Instagram y WhatsApp */
+.social-icon i {
+  font-size: 1.8em; /* Aumentar tamaño de los iconos */
 }

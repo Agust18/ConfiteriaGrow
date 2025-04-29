@@ -3,56 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Confitería & Growshop Dulce Delicia</title>
+  <title>Nombre Del Comercio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">;
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Fondo con cogollos en movimiento -->
   <div id="background"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
+  <!-- Navbar con botón Offcanvas -->
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Nombre Del Comercio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Menú Offcanvas -->
+<div class="offcanvas offcanvas-end text-bg-dark canvas" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link text-white" href="#pizzas">🍕 Pizzas</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#calzones">🥟 Calzones</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#ensaladas">🥗 Ensaladas</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#postres">🍨 Postres</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#pasteles">🎂 Pasteles</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#galletas">🍪 Galletas</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#bebidas">☕ Bebidas</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="#contacto">📞 Contacto</a></li>
+    </ul>
+  </div>
+</div>
+
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark" id="menu">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Confitería & Growshop</a>
+          <a class="navbar-brand" href="index.html">Nombre Del Comercio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Inicio</a>
+                <a class="nav-link active" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#tortas">Tortas</a>
+                <a class="nav-link" href="#pizzas">Pizzas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#pasteles">Pasteles</a>
+                <a class="nav-link" href="#calzones">Calzones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#galletas">Galletas</a>
+                <a class="nav-link" href="#ensaladas">Ensaladas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#bebidas">Bebidas</a>
+                <a class="nav-link" href="#postres">Postres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#postres">Postres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#postres">Postres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#postres">Postres</a>
               </li>
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> -->
     
 
   <!-- Contenedor de productos -->
-  <div id="product-container">
-    <div id="tortas" class="menu-section">
-      <h2>Tortas</h2>
-      <ul>
-        <li>Pastel de Chocolate - $1500</li>
-        <li>Torta de Frutillas - $1300</li>
-        <li>Torta de Limón y Merengue - $1200</li>
-      </ul>
-    </div>
+  <div id="pizzas" class="menu-section">
+    <h2  style="margin-top: 50px;" ><i class="fas fa-pizza-slice"></i > Pizzas</h2>
+    <ul>
+      <li><strong>Margherita</strong> - $1200<br><em>Salsa de tomate, mozzarella fresca, albahaca</em></li>
+      <li><strong>Cuatro Quesos</strong> - $1400<br><em>Mezcla de quesos: mozzarella, gorgonzola, parmesano, provolone</em></li>
+      <li><strong>Peperoni</strong> - $1600<br><em>Salsa de tomate, mozzarella, peperoni</em></li>
+      <li><strong>Vegetariana</strong> - $1300<br><em>Verduras de temporada, mozzarella, salsa de tomate</em></li>
+      <li><strong>Summer Splash</strong> - $1500<br><em>Tomates cherry, maíz, morel, calabacín amarillo</em></li>
+      <li><strong>Fall Pie</strong> - $1600<br><em>Salsa de calabaza, calabaza asada, cebolla roja, salchicha italiana, mozzarella, salvia</em></li>
+    </ul>
+  </div>
+
+  <div id="calzones" class="menu-section">
+    <h2><i class="fas fa-bread-slice"></i> Calzones</h2>
+    <ul>
+      <li><strong>Clásico</strong> - $1000<br><em>Jamón, mozzarella, huevo</em></li>
+      <li><strong>Napolitano</strong> - $1100<br><em>Tomate, mozzarella, albahaca</em></li>
+      <li><strong>Cuatro Quesos</strong> - $1200<br><em>Mozzarella, roquefort, provolone, parmesano</em></li>
+    </ul>
+  </div>
+  
+  
+  <div id="ensaladas" class="menu-section">
+    <h2><i class="fas fa-leaf"></i> Ensaladas</h2>
+    <ul>
+      <li><strong>César</strong> - $850<br><em>Lechuga, croutones, parmesano, aderezo César</em></li>
+      <li><strong>Caprese</strong> - $800<br><em>Tomate, mozzarella, albahaca, aceite de oliva</em></li>
+      <li><strong>Mixta</strong> - $700<br><em>Lechuga, tomate, zanahoria, huevo</em></li>
+    </ul>
+  </div>
+  
+  
+  <div id="postres" class="menu-section">
+    <h2><i class="fas fa-ice-cream"></i> Postres</h2>
+    <ul>
+      <li><strong>Helado Artesanal</strong> - $500<br><em>Sabores a elección</em></li>
+      <li><strong>Flan con Dulce</strong> - $600<br><em>Casero, con crema o dulce de leche</em></li>
+      <li><strong>Brownie</strong> - $700<br><em>Con nuez y salsa de chocolate</em></li>
+    </ul>
+  </div>
+  
+  
 
     <div id="pasteles" class="menu-section">
-      <h2>Pasteles</h2>
+      <h2><i class="fas fa-birthday-cake"></i> Pasteles</h2>
       <ul>
         <li>Pastel de Zanahoria - $800</li>
         <li>Pastel de Naranja y Almendra - $900</li>
@@ -61,7 +136,7 @@
     </div>
 
     <div id="galletas" class="menu-section">
-      <h2>Galletas</h2>
+      <h2><i class="fas fa-cookie"></i> Galletas</h2>
       <ul>
         <li>Galletas de Chocolate - $400</li>
         <li>Galletas de Vainilla - $350</li>
@@ -70,7 +145,8 @@
     </div>
 
     <div id="bebidas" class="menu-section">
-      <h2>Bebidas</h2>
+      <h2><i class="fas fa-mug-hot"></i> Bebidas</h2>
+
       <ul>
         <li>Café Espresso - $200</li>
         <li>Capuccino - $250</li>
@@ -80,14 +156,27 @@
 
     <div id="contacto" class="menu-section">
       <h2>Contacto</h2>
-      <p>Para pedidos, contáctanos al "NUMERO" o via email: BigtalloGrowSHOP</p>
+      <p>Para pedidos, contáctanos al "NUMERO" o via email: Comercio</p>
+      <p>
+        Síguenos en <a href="https://www.instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a> 
+        o escríbenos al <a href="https://wa.me/NUMERO" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      </p>
     </div>
-  </div>
+    
 
   
-
+    <script>
+      document.querySelectorAll('.offcanvas a.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          const offcanvasElement = document.querySelector('.offcanvas.show');
+          const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+          offcanvas.hide();
+        });
+      });
+    </script>
+    
   <!-- Script para movimiento de cogollos -->
-  <script src="js/javascript.js"></script>
+  
    <!-- Enlace a Bootstrap JS y Popper.js -->
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>

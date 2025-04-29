@@ -1,0 +1,35 @@
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo negro transparente */
+  padding: 10px 0;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.canvas ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.canvas ul li {
+  margin: 0 15px;
+}
+
+.canvas ul li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 15px;
+  border-radius: 40px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.canvas ul li a:hover {
+  background-color: #45a049; /* Un verde más oscuro al pasar el ratón */
+  transform: scale(1.1); /* Efecto de agrandar el texto */
+}
