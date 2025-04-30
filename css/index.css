@@ -1,0 +1,44 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7fdf8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-family: 'Righteous', cursive;
+    color: #2e7d32;
+    margin-top: 80px; /* Añadimos un margen superior para evitar que se solape con el navbar */
+    text-align: center;
+  }
+  
+  .card-title {
+    font-family: 'Righteous', cursive;
+    color: #388e3c;
+  }
+  
+  .card-text {
+    font-size: 0.95rem;
+  }
+  
+  .btn-success {
+    background-color: #4caf50;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #388e3c;
+  }
+  
+  .carousel-inner img {
+    width: 100%;  /* Asegura que las imágenes ocupen todo el ancho */
+    height: 450px; /* Ajusta la altura para un aspecto más balanceado */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
+  }
+  
+  footer {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    font-size: 0.9rem;
+  }
+  
