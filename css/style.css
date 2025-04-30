@@ -1,180 +1,178 @@
-/* Reset global */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Body y fondo */
-body, html {
- 
-  height: 100%;
-  background-color: #1101015e !important; /* Fondo claro para mantener la estética */
-  overflow-x: hidden; /* Evita el desplazamiento horizontal */
-  position: relative; /* Para permitir que los cogollos se posicionen correctamente */
+/* Navbar */
+.navbar {
+  backdrop-filter: blur(15px);
+  background-color: #343a40;
+  padding: 10px 20px;
 }
 
-
-
-body, p, li {
-
-  font-family: 'Cinzel', serif;
-}
-
-/* Menú superior con color verde y fondo transparente */
-
-  h1, h2, .navbar-brand {
-    font-family: 'Great Vibes', cursive;
-  }
- 
-
-/* Contenedor de productos centrado */
-#product-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 80px;
-  text-align: center;
-  padding: 20px;
-}
-
-.menu-section {
-  margin: 20px auto; /* Centra las secciones */
-  padding-bottom: 20px;
+.navbar-brand {
   color: white;
-  width: 80%;
-  text-align: center; /* Asegura que el texto esté centrado */
-  scroll-margin-top: 120px; /* Ajusta el desplazamiento del navbar */
-  padding: 15px 0; /* Aumenta el espaciado para secciones */
-  
+  font-weight: bold;
 }
 
-/* Títulos de las secciones */
-.menu-section h2 {
-  font-family: 'Caveat', cursive;
-  font-size: 1.8em; /* Tamaño de fuente ajustado */
-  color: #37f807; /* Verde en los títulos */
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center; /* Alinea el ícono y texto */
-  justify-content: center; /* Centra el ícono y texto */
+.navbar-nav {
+  gap: 10px;
 }
 
-/* Iconos */
-.menu-section h2 i {
-  font-size: 1.5em; /* Ajusta el tamaño del ícono */
-  margin-right: 10px; /* Espacio entre el ícono y el texto */
-}
-
-/* Asegurarse de que las listas no se desborden */
-.menu-section ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.menu-section ul li {
-  font-size: 20px;
-  padding: 10px 0;
-  border-bottom: 2px solid #ddd;
-  color: black;
-}
-
-/* Último item sin borde inferior */
-.menu-section ul li:last-child {
-  border-bottom: none;
-}
-
-/* Fondo con cogollos en movimiento */
-#background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0; /* NO -1, porque si no ni los ves */
-  pointer-events: none;
-  overflow: hidden;
-}
-
-.cogollo {
-  position: absolute;
-  opacity: 1.5;
-  pointer-events: none;
-  transition: transform 1s linear;
-}
-
-/* Diseño responsivo para dispositivos móviles */
-@media (max-width: 768px) {
-  #menu ul {
-    flex-direction: column;
-  }
-
-  #menu ul li {
-    margin: 10px 0;
-  }
-
-  .menu-section {
-    width: 90%;
-  }
-
-  .menu-section h2 {
-    font-size: 1.5em; /* Reducir tamaño de los títulos en pantallas pequeñas */
-  }
-
-  .menu-section ul li {
-    font-size: 18px; /* Reducir tamaño de los ítems de la lista */
-  }
-}
-
-.menu-section p {
-  color: black;
-}
-
-/* Estilo para la sección de contacto */
-#contacto {
-  text-align: center;
+.nav-link {
   color: white;
-}
-
-/* Títulos con iconos */
-#contacto h2 {
-  font-size: 1.8em; /* Tamaño del texto */
-  color: #37f807; /* Verde para el título */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#contacto h2 i {
-  font-size: 1.5em; /* Tamaño de los íconos */
-  margin-right: 10px; /* Espacio entre los iconos y el texto */
-}
-
-/* Estilo de los iconos sociales */
-.social-icon {
-  color: white;
-  font-size: 1.5em;
-  text-decoration: none;
-  margin: 0 15px; /* Espacio entre los iconos */
+  position: relative;
   transition: color 0.3s ease;
 }
 
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #00e676;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #00e676;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-nav {
+    gap: 0;
+  }
+}
+
+/* Secciones generales */
+section {
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente oscuro para mejorar la legibilidad */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 30px;
+}
+
+/* Títulos de sección */
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00e676;
+  font-weight: bold;
+}
+
+/* Texto de sección */
+section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Lista de elementos */
+section ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section ul li {
+  background: rgba(255, 255, 255, 0.1); /* Fondo más oscuro para los items */
+  margin: 10px 0;
+  padding: 12px 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borde más visible */
+  color: white; /* Texto blanco en la lista */
+  transition: background 0.3s, transform 0.3s ease; /* Efecto de hover suave */
+}
+
+section ul li:hover {
+  background: rgba(0, 230, 118, 0.2); /* Efecto verde al pasar el ratón */
+  transform: scale(1.05); /* Le da un pequeño efecto de zoom */
+}
+
+/* Contacto - redes sociales */
+.social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 15px;
+  background-color: #00e676;
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
 .social-icon:hover {
-  color: #37f807; /* Verde cuando se pasa el ratón */
+  background-color: #1de9b6;
+  color: #000;
 }
 
-.social-icon i {
-  margin-right: 8px; /* Espacio entre el icono y el texto */
+/* Estilo para las categorías del menú */
+.menu-category {
+  margin-bottom: 40px;
 }
 
-#contacto p {
-  font-size: 1.2em;
-  margin-top: 10px;
+.menu-category h3 {
+  font-size: 2rem;
+  color: #00e676;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-/* Estilo para los iconos de Instagram y WhatsApp */
-.social-icon i {
-  font-size: 1.8em; /* Aumentar tamaño de los iconos */
+/* Menú - estilo general */
+#menu ul li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s, transform 0.3s ease;
+}
+
+/* Iconos en el menú */
+#menu ul li i {
+  font-size: 2rem;
+  margin-right: 15px;
+  color: #00e676;
+}
+
+/* Precio */
+.price {
+  background-color: #00e676;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: black;
+  font-size: 1.1rem;
+  margin-left: 15px;
+}
+
+/* Descripción */
+.description {
+  font-size: 1rem;
+  color: #ddd;
+  margin-top: 5px;
+  margin-left: 40px;
+}
+
+/* Efecto hover */
+#menu ul li:hover {
+  background: rgba(0, 230, 118, 0.2);
+  transform: scale(1.05);
 }
