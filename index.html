@@ -1,73 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nombre Del Comercio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Confitería Grow</title>
+
+  <!-- Fuentes y estilos -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class=" animate__animated animate__backInLeft">
-    <!-- Fondo con cogollos en movimiento -->
-  <!-- <div id="background"></div> -->
-
- <!-- Navbar -->
- <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">🍃 Confitería Grow</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Menu.html"><i class="bi bi-cup-hot-fill"></i> Menú</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="grow.html"><i class="bi bi-flower3"></i> Growshop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto"><i class="bi bi-telephone-fill"></i> Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Presentación Growshop</title>
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Open+Sans&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
-</head>
 <body class="animate__animated animate__fadeIn">
 
-  <header class="text-center py-5">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">🍃 Confitería Grow</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="Menu.html"><i class="bi bi-cup-hot-fill"></i> Menú</a></li>
+            <li class="nav-item"><a class="nav-link" href="grow.html"><i class="bi bi-flower3"></i> Growshop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto"><i class="bi bi-telephone-fill"></i> Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Presentación -->
+  <header class="text-center py-5 mt-5">
     <h1 class="display-4">🌱 Bienvenidos a Confitería Grow</h1>
     <p class="lead">Una experiencia única que combina lo dulce con el mundo del cultivo 🌿</p>
     <a href="grow.html" class="btn btn-success mt-3">Conocé nuestros productos</a>
   </header>
 
+  <!-- Carrusel -->
   <section id="carousel" class="container my-5">
     <div id="growCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner rounded-4 shadow">
@@ -75,10 +54,10 @@
           <img src="imagenes/cosechalavida.heic" class="d-block w-100" alt="Growshop interior">
         </div>
         <div class="carousel-item">
-          <img src="imagenes/" class="d-block w-100" alt="Fertilizantes">
+          <img src="imagenes/fertilizantes.jpg" class="d-block w-100" alt="Fertilizantes">
         </div>
         <div class="carousel-item">
-          <img src="imagenes/" class="d-block w-100" alt="Accesorios para cultivo">
+          <img src="imagenes/accesorios.jpg" class="d-block w-100" alt="Accesorios para cultivo">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#growCarousel" data-bs-slide="prev">
@@ -90,6 +69,7 @@
     </div>
   </section>
 
+  <!-- Productos -->
   <section class="container text-center my-5">
     <div class="row g-4">
       <div class="col-md-4">
@@ -122,17 +102,13 @@
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="text-center py-4">
     <p>© 2025 Confitería Grow - Todos los derechos reservados.</p>
   </footer>
 
-
-
-
-
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
