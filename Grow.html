@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/grow.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confitería Grow</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Righteous&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Iconos y estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/grow.css">
 </head>
 <body class="animate__animated animate__backInRight">
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="imagenes/icon.jpg" alt="Logo" style="height: 30px; margin-right: 3px; border-radius: 20px;object-fit:cover;">
-                Confitería Grow🍃
-              </a>
-              
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html/#menu"><i class="bi bi-cup-hot-fill"></i> Menú</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="grow.html"><i class="bi bi-flower3"></i> Growshop</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="imagenes/icon.jpg" alt="Logo" style="height: 30px; margin-right: 3px; border-radius: 20px; object-fit: cover;">
+        Confitería Grow🍃
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
         </div>
-      </nav>
-    
-    
-    
-<!-- SECCIÓN LÍQUIDOS Y FERTILIZANTES -->
-<section id="liquidos" class="growshop-section">
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i> Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html/#menu"><i class="bi bi-cup-hot-fill"></i> Menú</a></li>
+            <li class="nav-item"><a class="nav-link" href="grow.html"><i class="bi bi-flower3"></i> Growshop</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECCIONES GROWSHOP -->
+  <section id="liquidos" class="growshop-section">
     <h2><i class="bi bi-droplet-fill"></i> Líquidos y Fertilizantes</h2>
     <p>Todo lo que necesitás para nutrir tus plantas de manera orgánica.</p>
     <div class="product-list">
@@ -68,8 +64,7 @@
       </div>
     </div>
   </section>
-  
-  <!-- SECCIÓN Filtros y Accesorios -->
+
   <section id="filtros" class="growshop-section">
     <h2><i class="bi bi-filter"></i> Filtros y Accesorios</h2>
     <p>Mejorá la calidad del aire y el agua de tu cultivo con nuestros filtros especializados.</p>
@@ -88,8 +83,7 @@
       </div>
     </div>
   </section>
-  
-  <!-- SECCIÓN PICADORES -->
+
   <section id="picadores" class="growshop-section">
     <h2><i class="bi bi-scissors"></i> Picadores</h2>
     <p>Picadores de alta calidad para tus plantas, perfectos para la preparación de hierbas.</p>
@@ -108,8 +102,7 @@
       </div>
     </div>
   </section>
-  
-  <!-- SECCIÓN PRODUCTOS PARA PLANTAS DE MARIHUANA -->
+
   <section id="marihuana" class="growshop-section">
     <h2><i class="bi bi-leaf"></i> Productos para el Cultivo de Marihuana</h2>
     <p>Todo lo necesario para que tu cultivo de marihuana sea exitoso y de alta calidad.</p>
@@ -128,8 +121,7 @@
       </div>
     </div>
   </section>
-  
-  <!-- SECCIÓN TUQUEROS -->
+
   <section id="tuqueros" class="growshop-section">
     <h2><i class="bi bi-box"></i> Tuqueros y Embalajes</h2>
     <p>Empaquetado y almacenamiento seguro para tus productos.</p>
@@ -148,7 +140,9 @@
       </div>
     </div>
   </section>
-  
-    
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
