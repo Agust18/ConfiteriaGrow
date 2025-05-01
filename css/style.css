@@ -12,18 +12,21 @@ body {
   background-color: #f7fdf8;
   color: #333;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* H1 - TÍTULOS PRINCIPALES */
 h1, h2, h3, h4 {
   font-family: 'Righteous', cursive;
-  color: #2e7d32;
+  color: #0af016;
   margin-bottom: 20px;
 }
 
+
+
 /* NAVBAR */
 .navbar {
-  backdrop-filter: blur(15px);
+  
   background-color: #343a40;
   padding: 10px 20px;
   position: fixed;
@@ -288,11 +291,11 @@ footer {
 
   .growshop-section {
     padding: 20px;
-    margin-top: 120px;
+    margin-top: 50px;
   }
 
   section {
-    padding: 60px 15px;
+    padding: 40px 15px;
   }
 
   h1 {
@@ -319,3 +322,4 @@ footer {
     font-size: 1rem;
   }
 }
+
