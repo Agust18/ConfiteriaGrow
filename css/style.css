@@ -150,7 +150,7 @@ section ul li:hover {
 /* CARRUSEL */
 .carousel-inner img {
   width: 100%;
-  height: 500px;
+  height: 350px;
   object-fit: cover;
   border-radius: 10px;
 }
