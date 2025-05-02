@@ -12,7 +12,7 @@ body {
   background-color: #f7fdf8;
   color: #333;
   line-height: 1.6;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Desactiva el desplazamiento horizontal */
   
 }
 
@@ -259,10 +259,13 @@ footer {
 }
 
 .product-item img {
-  width: 100%;
+ 
+  height: auto;
+ 
+  border-radius: 10px;
+  max-width: 100%; /* Evita que las imágenes se desborden */
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
 }
 
 .product-item h4 {
@@ -320,6 +323,7 @@ footer {
     gap: 0;
   }
 
+
   .product-list {
     flex-direction: column; /* Cambia de fila a columna */
     gap: 5px; /* Menor separación entre los productos */
@@ -330,7 +334,7 @@ footer {
   }
 
   section {
-    padding: 40px 15px;
+    padding: 30px 15px;
   }
 
   h1 {
