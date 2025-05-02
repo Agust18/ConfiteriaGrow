@@ -1,46 +1,43 @@
-// Crear cogollos flotando por la pantalla
-function createCogollo() {
+let maxCogollos = 50;
+
+  function createCogollo() {
+    const background = document.getElementById('background');
+    if (background.querySelectorAll('.cogollo').length >= maxCogollos) return;
+
     const cogollo = document.createElement('img');
-    cogollo.src = "imagenes/cogollo.png";  // Ruta a tu imagen del cogollo
+    cogollo.src = "../imagenes/cogollo.png";
     cogollo.classList.add('cogollo');
-  
-    // Posicionar el cogollo aleatoriamente en la pantalla
-    const xPos = Math.random() * window.innerWidth;
-    const yPos = Math.random() * window.innerHeight;
-    cogollo.style.left = `${xPos}px`;
-    cogollo.style.top = `${yPos}px`;
-  
-    // Establecer un tamaño aleatorio para el cogollo
-    const size = Math.random() * 40 + 30; // Tamaño entre 20px y 50px
+
+    // Posiciones y tamaño aleatorio
+    cogollo.style.left = `${Math.random() * window.innerWidth}px`;
+    cogollo.style.top = `${Math.random() * window.innerHeight}px`;
+    const size = Math.random() * 40 + 30;
     cogollo.style.width = `${size}px`;
     cogollo.style.height = `${size}px`;
-  
-    // Añadir el cogollo al fondo
-    document.getElementById('background').appendChild(cogollo);
-  
-    // Animación para mover el cogollo
+
+    background.appendChild(cogollo);
     animateCogollo(cogollo);
   }
-  
-  // Animar los cogollos
+
   function animateCogollo(cogollo) {
-    // Definir la animación de los cogollos
-    const duration = Math.random() * 5 + 5; // Duración aleatoria entre 5 y 10 segundos
-    const xMove = Math.random() * 5000 - 2000; // Movimiento aleatorio en el eje X
-    const yMove = Math.random() * 5000 - 2000; // Movimiento aleatorio en el eje Y
-  
-    cogollo.style.transition = `transform ${duration}s linear`;
-  
+    // Animación para que se mueva y desaparezca
+    const animationDuration = Math.random() * 10 + 10; // Aleatorio entre 10 y 20 segundos
+    const rotation = Math.random() * 360; // Ángulo aleatorio
+    const translateX = Math.random() * 500 - 250; // Desplazamiento aleatorio en X
+    const translateY = Math.random() * 500 - 250; // Desplazamiento aleatorio en Y
+
+    cogollo.style.transition = `transform ${animationDuration}s linear`;
+
     setTimeout(() => {
-      cogollo.style.transform = `translate(${xMove}px, ${yMove}px)`;
-  
-      // Eliminar el cogollo después de la animación
-      setTimeout(() => {
-        cogollo.remove();
-      }, duration * 2000); // Eliminar el cogollo después de que termine la animación
+      cogollo.style.transform = `rotate(${rotation}deg) translate(${translateX}px, ${translateY}px)`;
+      cogollo.style.opacity = 0;
     }, 100);
+
+    // Eliminar el cogollo después de la animación
+    setTimeout(() => {
+      cogollo.remove();
+    }, animationDuration * 1000);
   }
-  
-  // Generar cogollos constantemente
-  setInterval(createCogollo, 300);  // Cada 500ms se genera un nuevo cogollo
-  
+
+  // Crear un cogollo cada 1 segundo
+  setInterval(createCogollo, 1000);

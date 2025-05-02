@@ -59,34 +59,6 @@ h1, h2, h3, h4 {
   box-shadow: 0 0 0 0.1rem rgba(0, 230, 118, 0.5);
 }
 
-.offcanvas {
-  background-color: #1b1b1b !important;
-  color: white !important;
-  border-left: 2px solid #00e676;
-}
-
-.offcanvas-title {
-  color: #00e676 !important;
-  font-family: 'Righteous', cursive;
-  font-size: 1.4rem;
-}
-
-.btn-close {
-  filter: invert(1);
-}
-
-.offcanvas-body .nav-link {
-  color: white !important;
-  font-size: 1.1rem;
-  padding: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.offcanvas-body .nav-link:hover {
-  background-color: rgba(0, 230, 118, 0.1);
-  color: #00e676 !important;
-  border-radius: 5px;
-}
 
 
 
@@ -376,4 +348,8 @@ footer {
     font-size: 1rem;
   }
 }
+
+
+
+
 
